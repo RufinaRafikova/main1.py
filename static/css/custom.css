@@ -1,0 +1,180 @@
+
+body {
+    background-color: #333;
+    color: #fff;
+    background-image: url(../../images/background.jpg);
+    background-attachment: fixed;
+    padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header-image {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.header-text {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+}
+
+.paragraph {
+    font-size: 28px;
+    color: #fff;
+    text-align: justify;
+    margin-top: 36px;
+}
+
+.paragraph a {
+    color: #0202a0;
+    font-weight: bold;
+}
+
+.bg-dark {
+    background-color: #333 !important;
+}
+
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.table thead th {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.btn-register {
+    background-color: #3838c0;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 50px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.btn-registration {
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 50px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.btn-profile {
+    background-color: #a76a69;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 50px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.btn-logout {
+    text-decoration: none;
+    background-color: #bd5150;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 50px;
+    font-size: 14px;
+    margin-right: 20px;
+
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.a-footer {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.ask-container {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+

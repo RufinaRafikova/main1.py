@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <nav class="navbar navbar-expand-lg navbar bg-dark">
+        <a class="navbar-brand" href="{{ url_for('index_handler') }}">UzRel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item btn-registration">
+                    <a class="nav-link" href="{{ url_for('signup_handler') }}">Sign Up</a>
+                </li>
+                <li class="nav-item btn-register">
+                    <a class="nav-link" href="{{ url_for('login_handler') }}">LogIn</a>
+                </li>
+                <li class="nav-item btn-profile">
+                    <a class="nav-link" href="{{ url_for('profile_handler') }}">Profile</a>
+                </li>
+                <li class="nav-item btn-logout">
+                    <a class="nav-link" href="{{ url_for('index_handler') }}">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</html>

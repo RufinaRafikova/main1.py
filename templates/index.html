@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/custom.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>UzRel - Главная</title>
+</head>
+<body>
+<!-- NavBar -->
+<header class="header">
+    {% include 'header.html' %}
+</header>
+<main class="main">
+    <!-- Первый разворот -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4">
+                <img src="../images/image1.jpg" class="header-image" alt="image 1">
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+                <p class="header-text">UzRel</p>
+                <p class="paragraph">Сервис для поддержки крупных российских IT-компаний и их сотрудников в отдельности,
+                    которые самостоятельно релоцировались в Узбекистан для выбора экономной системы
+                    налогообложения. </p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <!-- Второй разворот -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <p class="header-text">Для Релокантов</p>
+                <p class="paragraph">Lorem ipsum dolor sit amamet, consectetur adipiscing elit. Proin tincidunt massa id
+                    orci commodo, non tincidunt dolor fringilla. Maecenas volutpat elit tellus, at varius sem viverra
+                    quis. Aliquam erat volutpat. </p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-4">
+                <img src="../images/image2.jpg" class="header-image" alt="image 2">
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <!-- Третий разворот -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4">
+                <img src="../images/image3.jpg" class="header-image" alt="image 3">
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+                <p class="header-text">Для компаний</p>
+                <p class="paragraph">Lorem ipsum dolor sit amamet, consectetur adipiscing elit. Proin tincidunt massa id
+                    orci commodo, non tincidunt dolor fringilla. Maecenas volutpat elit tellus, at varius sem viverra
+                    quis. Aliquam erat volutpat. </p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <!-- Четвертый разворот -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4">
+                <p class="header-text">Ваша экономия</p>
+                <p class="paragraph">Вы можете сэкономить до 10% от дохода. </p>
+                <p class="paragraph">Воспользуйтесь кулькулятором в личном кабинете. </p>
+                <div class="row">
+                    <p class="paragraph">
+                        <a action="/signup.py"  href="{{ url_for('signup_handler') }}">Зарегистрироваться</a>
+                    </p>
+                    <div class="col-1"></div>
+                    <p class="paragraph">
+                        <a action="/login.py"  href="{{ url_for('login_handler') }}">Войти</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+                <form>
+                    <div>
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="surname">Фамилия:</label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="comment">Как мы можем Вам помочь?</label>
+                        <textarea id="comment" name="comment"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer bg-dark">
+    {% include 'footer.html' %}
+</footer>
+</body>
+</html>
